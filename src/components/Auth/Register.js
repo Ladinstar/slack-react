@@ -5,14 +5,14 @@ import firebase from '../../firebase';
 
 class Register extends React.Component {
     state = {
-        username  : '',
-        email : '',
-        password : '',
-        passwordConfirmation : ''
+        username: '',
+        email: '',
+        password: '',
+        passwordConfirmation: ''
     }
 
     handleChange = event => {
-        this.setState({ [event.target.name] : event.target.value })
+        this.setState({ [event.target.name]: event.target.value })
     }
 
     handleSubmit = event => {
@@ -29,7 +29,7 @@ class Register extends React.Component {
     }
 
     render() {
-        const  { username , email, password, passwordConfirmation } = this.state;
+        const { username, email, password, passwordConfirmation } = this.state;
         return (
             <Grid textAlign="center" verticalAlign="middle" className="app">
                 <Grid.Column style={{ maxWidth: 450 }}>
@@ -53,8 +53,8 @@ class Register extends React.Component {
                                 value={password} />
 
                             <Form.Input fluid name="passwordConfirmation" icon="repeat" iconPosition="left"
-                                placeholder="Confirmation de mot de passe" onChange={this.handleChange} type="text" 
-                                value={passwordConfirmation}/>
+                                placeholder="Confirmation de mot de passe" onChange={this.handleChange} type="text"
+                                value={passwordConfirmation} />
 
                             <Button color="blue" fluid size="large">S'enregistrer</Button>
 
