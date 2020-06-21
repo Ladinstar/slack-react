@@ -6,9 +6,9 @@ class Login extends React.Component {
 
     state = {}
 
-    handleChange = () => {}
+    handleChange = () => { }
 
-    render(){
+    render() {
         return (
             <Grid textAlign="center" verticalAlign="middle" className="app">
                 <Grid.Column style={{ maxWidth: 500 }}>
